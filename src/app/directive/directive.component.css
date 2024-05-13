@@ -1,0 +1,22 @@
+.block-transport{
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.big-transport{
+    border: 1px solid black;
+    margin-left: 20px;
+    width: 20%;
+    padding: 0.5%;
+    
+}
+
+.parents-block{
+    display: flex;
+
+}

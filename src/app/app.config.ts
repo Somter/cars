@@ -1,8 +1,13 @@
-import { ApplicationConfig } from '@angular/core';
-import { provideRouter } from '@angular/router';
+import { provideRouter, Routes } from "@angular/router";
+import { ApplicationConfig } from "@angular/core";
 
-import { routes } from './app.routes';
+import { DirectiveComponent } from "./directive/directive.component";
 
+const appRoutes: Routes = [
+  // Directives
+  {path: '', component: DirectiveComponent},
+
+];
 export const appConfig: ApplicationConfig = {
-  providers: [provideRouter(routes)]
+  providers: [provideRouter(appRoutes)]
 };

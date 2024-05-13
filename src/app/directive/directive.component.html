@@ -1,0 +1,41 @@
+<div class="parents-block">
+    <div class="block-transport">
+        <button (click)="PlusCar()">{{Car}}</button>
+        <button (click)="PlusAirplane()">{{Airplane}}</button>
+        <button (click)="PlusShip()">{{Ship}}</button>
+     </div>
+     <div class="big-transport">
+        <div>Самый большой в мире:</div>
+        <div [ngSwitch]="counter">
+            <div *ngSwitchCase="1">
+                {{Car}} 
+                <p>Название: БЭМ (Багги-Экскаватор-Мультибак), или "Карьерный экскаватор-перегружатель-мультибак"</p>
+                <p>Длина: около 96 метров</p>
+                <p>Высота: около 22 метров</p>
+                <p>Ширина: около 13 метров</p>
+                <p>Вес: около 45,500 тонн</p>
+                <p>Производитель: Фирма ThyssenKrupp, Германия</p>
+                <p>Назначение: добыча каменных пород в карьерах, а также перегрузка и транспортировка грузов.</p>
+            </div>
+            <div *ngSwitchCase="2">
+                {{Airplane}}  
+                <p>Название: Stratolaunch</p>
+                <p>Размах крыльев: около 117 метров</p>
+                <p>Длина: около 73 метров</p>
+                <p>Вес: около 590 тонн</p>
+                <p>Производитель: Stratolaunch Systems Corporation</p>
+                <p>Назначение: использовался для запуска космических ракет на низкую околоземную орбиту</p>
+            </div>
+            <div *ngSwitchCase="3">
+                {{Ship}}
+                <p>Название: Prelude FLNG (Floating Liquefied Natural Gas)</p>
+                <p>Длина: около 488 метров</p>
+                <p>Ширина: около 74 метров</p>
+                <p>Водоизмещение: около 600,000 тонн</p>
+                <p>Производитель: Samsung Heavy Industries, Корея</p>
+                <p>Назначение: добыча и переработка природного газа на море</p>
+            </div>
+        </div>
+     </div>
+</div>
+
